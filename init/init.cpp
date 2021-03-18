@@ -66,39 +66,11 @@ void set_device_props(const std::string fingerprint, const std::string descripti
 void load_device_properties() {
     std::string hwname = GetProperty("ro.boot.hwname", "");
     std::string region = GetProperty("ro.boot.hwc", "");
-
-    if (hwname == "curtana") {
-        if (region == "Global_TWO") {
-            set_device_props(
-                    "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys",
-                    "redfin-user 11 RQ3A.210605.005 7349499 release-keys",
-                    "Redmi", "curtana", "Redmi Note 9S");
-        } else if (region == "India") {
-            set_device_props(
-                    "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys",
-                    "redfin-user 11 RQ3A.210605.005 7349499 release-keys",
-                    "Redmi", "curtana", "Redmi Note 9 Pro");
-        } else if (region == "Japan") {
-            set_device_props(
-                    "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys",
-                    "redfin-user 11 RQ3A.210605.005 7349499 release-keys",
-                    "Redmi", "curtana", "Redmi Note 9S");
-        }
-    } else if (hwname == "excalibur") {
-        set_device_props(
-                "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys",
-                "redfin-user 11 RQ3A.210605.005 7349499 release-keys",
-                "Redmi", "excalibur", "Redmi Note 9 Pro Max");
-    } else if (hwname == "gram") {
+    if (hwname == "gram") {
         set_device_props(
                 "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys",
                 "redfin-user 11 RQ3A.210605.005 7349499 release-keys",
                 "POCO", "gram", "POCO M2 Pro");
-    } else if (hwname == "joyeuse") {
-        set_device_props(
-                "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys",
-                "redfin-user 11 RQ3A.210605.005 7349499 release-keys",
-                "Redmi", "joyeuse", "Redmi Note 9 Pro");
     }
 }
 
