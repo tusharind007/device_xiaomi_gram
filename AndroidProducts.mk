@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2020 The Evolution-X Project
+# Copyright (C) 2020 The DotOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_gram.mk
+    $(LOCAL_DIR)/dot_gram.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_gram-user \
-    evolution_gram-userdebug \
-    evolution_gram-eng
+    dot_gram-user \
+    dot_gram-userdebug \
+    dot_gram-eng
