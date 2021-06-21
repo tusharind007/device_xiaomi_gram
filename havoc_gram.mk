@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The ArrowOS
+# Copyright (C) 2020 The havocOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -7,14 +7,14 @@
 # Inherit from gram device
 $(call inherit-product, device/xiaomi/gram/device.mk)
 
-# Inherit some common ArrowOS stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common Havoc-OS stuff
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
-PRODUCT_NAME := arrow_gram
+PRODUCT_NAME := havoc_gram
 PRODUCT_DEVICE := gram
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Poco M2 Pro
@@ -22,5 +22,5 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Maintainer
-DEVICE_MAINTAINER := SonalSingh18
+HAVOC_BUILD_TYPE := Unofficial
+HAVOC_MAINTAINER := TusharInd007
